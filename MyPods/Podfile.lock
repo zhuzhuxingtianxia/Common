@@ -1,0 +1,96 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AsyncDisplayKit (1.9.81):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.81)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.81)
+  - AsyncDisplayKit/Core (1.9.81):
+    - AsyncDisplayKit/ASDealloc2MainObject
+  - AsyncDisplayKit/PINRemoteImage (1.9.81):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (>= 3.0.0-beta.2)
+  - CocoaAsyncSocket (7.5.1):
+    - CocoaAsyncSocket/GCD (= 7.5.1)
+  - CocoaAsyncSocket/GCD (7.5.1)
+  - JLRoutes (2.0.1)
+  - JSONKit-NoWarning (1.2)
+  - JSPatch (1.1.2):
+    - JSPatch/Core (= 1.1.2)
+  - JSPatch/Core (1.1.2)
+  - JSPatch/Extensions (1.1.2):
+    - JSPatch/Core
+  - JSPatch/JPCFunction (1.1.2):
+    - JSPatch/Core
+  - JSPatch/JPCFunctionBinder (1.1.2):
+    - JSPatch/Core
+  - JSPatch/Loader (1.1.2):
+    - JSPatch/Core
+  - Masonry (1.0.1)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (2.5.16)
+  - MJRefresh (2.4.12)
+  - PINCache (2.2.2)
+  - PINRemoteImage/Core (3.0.0-beta.2):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/iOS (3.0.0-beta.2):
+    - PINRemoteImage/Core
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - AsyncDisplayKit (~> 1.9.81)
+  - CocoaAsyncSocket (~> 7.5.1)
+  - JLRoutes (~> 2.0.1)
+  - JSONKit-NoWarning (~> 1.1)
+  - JSPatch (~> 1.1.2)
+  - JSPatch/Extensions
+  - JSPatch/JPCFunction
+  - JSPatch/JPCFunctionBinder
+  - JSPatch/Loader
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD (~> 0.8)
+  - MJExtension (~> 2.5.10)
+  - MJRefresh (~> 2.4.8)
+  - Realm (~> 2.8.3)
+  - SDWebImage (~> 3.7.3)
+  - SocketRocket (~> 0.5.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AsyncDisplayKit: 011ea22a76a79a5bbfc14501fede6e0196a3c2f0
+  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  JLRoutes: 3652abe3b4ac51bc93ec3a371353d762e8566092
+  JSONKit-NoWarning: 3d27e6f9e6846ecf741e8c64dcadd7d5aa7193cb
+  JSPatch: 741205ebb2e2238c223a436e4c8cf75cf40a345f
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
+  PINRemoteImage: 197554c5ba57a6ae90f5db441651180039fc9062
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 728ef589ac0541a52b3b13a44e27b6f6cf156c55
+
+COCOAPODS: 1.2.0

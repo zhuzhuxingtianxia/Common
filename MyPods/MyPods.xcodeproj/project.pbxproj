@@ -1,0 +1,1264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76AE6FA27AE39760D1BB3FC3 /* libPods-MyPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34C7508DE4DB755D973800B /* libPods-MyPods.a */; };
+		9643FEC61F24E40995240613 /* libPods-RealmStauts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC284EF2D2CB40E4259153D /* libPods-RealmStauts.a */; };
+		B60603BE1C5876B100221774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60603BD1C5876B100221774 /* ViewController.m */; };
+		B60603C11C5876CC00221774 /* UIView+Masonry_LJC.m in Sources */ = {isa = PBXBuildFile; fileRef = B60603C01C5876CC00221774 /* UIView+Masonry_LJC.m */; };
+		B62378581EFD1068004DE0DB /* SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378571EFD1068004DE0DB /* SQL.m */; };
+		B623785B1EFD1369004DE0DB /* UserListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623785A1EFD1369004DE0DB /* UserListController.m */; };
+		B623785E1EFD13A7004DE0DB /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623785D1EFD13A7004DE0DB /* RegisterController.m */; };
+		B62378611EFD1431004DE0DB /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378601EFD1431004DE0DB /* UserModel.m */; };
+		B62378A91F02014C004DE0DB /* ChangePasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378A81F02014C004DE0DB /* ChangePasswordController.m */; };
+		B62378AC1F0201DB004DE0DB /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378AB1F0201DB004DE0DB /* DetailController.m */; };
+		B62378AF1F038045004DE0DB /* Detail2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378AE1F038045004DE0DB /* Detail2Controller.m */; };
+		B62378BB1F0501F1004DE0DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378BA1F0501F1004DE0DB /* main.m */; };
+		B62378BE1F0501F1004DE0DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378BD1F0501F1004DE0DB /* AppDelegate.m */; };
+		B62378C41F0501F1004DE0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62378C21F0501F1004DE0DB /* Main.storyboard */; };
+		B62378C61F0501F1004DE0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62378C51F0501F1004DE0DB /* Assets.xcassets */; };
+		B62378C91F0501F1004DE0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62378C71F0501F1004DE0DB /* LaunchScreen.storyboard */; };
+		B62378D41F0501F1004DE0DB /* RealmStautsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378D31F0501F1004DE0DB /* RealmStautsTests.m */; };
+		B62378DF1F0501F2004DE0DB /* RealmStautsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378DE1F0501F2004DE0DB /* RealmStautsUITests.m */; };
+		B62379B61F0506E7004DE0DB /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62379B51F0506E7004DE0DB /* TableViewController.m */; };
+		B62379B81F050909004DE0DB /* DataSoure in Resources */ = {isa = PBXBuildFile; fileRef = B62379B71F050909004DE0DB /* DataSoure */; };
+		B62379BB1F050C79004DE0DB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B62379BA1F050C79004DE0DB /* TableViewCell.m */; };
+		B62379BE1F050CBB004DE0DB /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B62379BD1F050CBB004DE0DB /* TableModel.m */; };
+		B62379C11F050CE2004DE0DB /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B62379C01F050CE2004DE0DB /* ViewModel.m */; };
+		B62379C41F05EF2A004DE0DB /* CPUMemoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B62379C31F05EF2A004DE0DB /* CPUMemoryManager.m */; };
+		B62414241E2B0B380039E922 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = B62414231E2B0B380039E922 /* main.js */; };
+		B6257F0E1F55759E00D834BC /* AutolayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6257F0D1F55759E00D834BC /* AutolayoutController.m */; };
+		B6257F111F5575D200D834BC /* MasonryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6257F101F5575D100D834BC /* MasonryController.m */; };
+		B6257F141F5575F200D834BC /* JSPacthController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6257F131F5575F200D834BC /* JSPacthController.m */; };
+		B6257F171F55760C00D834BC /* SocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6257F161F55760C00D834BC /* SocketController.m */; };
+		B6257F1A1F56534800D834BC /* BageButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6257F191F56534800D834BC /* BageButtonController.m */; };
+		B62C56C21E790B7E0009A68B /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B62C56C11E790B7E0009A68B /* SocketManager.m */; };
+		B6500B9B1D6B053700BF36B6 /* UpImageDownTextBageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6500B9A1D6B053700BF36B6 /* UpImageDownTextBageButton.m */; };
+		B6500B9D1D6B0EB300BF36B6 /* 消息数量.png in Resources */ = {isa = PBXBuildFile; fileRef = B6500B9C1D6B0EB300BF36B6 /* 消息数量.png */; };
+		B6500B9F1D6B14C200BF36B6 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = B6500B9E1D6B14C200BF36B6 /* order.png */; };
+		B65BD43A1F063B1A00D18CEC /* ModifyStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65BD4391F063B1A00D18CEC /* ModifyStateController.m */; };
+		B6650A961E1B6A4E00701E36 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = B6650A951E1B6A4E00701E36 /* demo.js */; };
+		B6650A991E1BB5CB00701E36 /* JSPatchCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650A981E1BB5CB00701E36 /* JSPatchCode.m */; };
+		B6BE296F1F1C84E7007EF6B2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE296E1F1C84E7007EF6B2 /* Router.swift */; };
+		B6C0FC541BA95B3500A32A2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C0FC531BA95B3500A32A2A /* main.m */; };
+		B6C0FC571BA95B3500A32A2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C0FC561BA95B3500A32A2A /* AppDelegate.m */; };
+		B6C0FC5D1BA95B3500A32A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C0FC5B1BA95B3500A32A2A /* Main.storyboard */; };
+		B6C0FC5F1BA95B3500A32A2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C0FC5E1BA95B3500A32A2A /* Images.xcassets */; };
+		B6C0FC621BA95B3500A32A2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C0FC601BA95B3500A32A2A /* LaunchScreen.xib */; };
+		B6C0FC6E1BA95B3600A32A2A /* MyPodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C0FC6D1BA95B3600A32A2A /* MyPodsTests.m */; };
+		B6DCCE1B1F8B6BA300483B5F /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCE1A1F8B6BA300483B5F /* NetWorkEngine.m */; };
+		B6FDCE451E794EC7000F5408 /* severSoket.js in Resources */ = {isa = PBXBuildFile; fileRef = B6FDCE441E794EC7000F5408 /* severSoket.js */; };
+		B6FDCE481E7A78D2000F5408 /* WebSocketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */; };
+		B6FDCE4B1E7A8C14000F5408 /* CoSocketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDCE4A1E7A8C14000F5408 /* CoSocketManger.m */; };
+		B6FDCE4D1E7A9DBC000F5408 /* webServer.js in Resources */ = {isa = PBXBuildFile; fileRef = B6FDCE4C1E7A9DBC000F5408 /* webServer.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B62378D01F0501F1004DE0DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C0FC461BA95B3500A32A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62378B61F0501F1004DE0DB;
+			remoteInfo = RealmStauts;
+		};
+		B62378DB1F0501F2004DE0DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C0FC461BA95B3500A32A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62378B61F0501F1004DE0DB;
+			remoteInfo = RealmStauts;
+		};
+		B6C0FC681BA95B3500A32A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C0FC461BA95B3500A32A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6C0FC4D1BA95B3500A32A2A;
+			remoteInfo = MyPods;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4862F0D7619E5480A9409487 /* Pods-RealmStauts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStauts.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmStauts/Pods-RealmStauts.release.xcconfig"; sourceTree = "<group>"; };
+		7CA712A01A5B3FBE3430DEEC /* Pods-MyPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPods/Pods-MyPods.release.xcconfig"; sourceTree = "<group>"; };
+		B34C7508DE4DB755D973800B /* libPods-MyPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60603BC1C5876B100221774 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B60603BD1C5876B100221774 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B60603BF1C5876CC00221774 /* UIView+Masonry_LJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry_LJC.h"; sourceTree = "<group>"; };
+		B60603C01C5876CC00221774 /* UIView+Masonry_LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry_LJC.m"; sourceTree = "<group>"; };
+		B62378561EFD1068004DE0DB /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
+		B62378571EFD1068004DE0DB /* SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQL.m; sourceTree = "<group>"; };
+		B62378591EFD1369004DE0DB /* UserListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListController.h; sourceTree = "<group>"; };
+		B623785A1EFD1369004DE0DB /* UserListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListController.m; sourceTree = "<group>"; };
+		B623785C1EFD13A7004DE0DB /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		B623785D1EFD13A7004DE0DB /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		B623785F1EFD1431004DE0DB /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		B62378601EFD1431004DE0DB /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		B62378A71F02014C004DE0DB /* ChangePasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordController.h; sourceTree = "<group>"; };
+		B62378A81F02014C004DE0DB /* ChangePasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordController.m; sourceTree = "<group>"; };
+		B62378AA1F0201DB004DE0DB /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		B62378AB1F0201DB004DE0DB /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		B62378AD1F038045004DE0DB /* Detail2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail2Controller.h; sourceTree = "<group>"; };
+		B62378AE1F038045004DE0DB /* Detail2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail2Controller.m; sourceTree = "<group>"; };
+		B62378B71F0501F1004DE0DB /* RealmStauts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmStauts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62378BA1F0501F1004DE0DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B62378BC1F0501F1004DE0DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B62378BD1F0501F1004DE0DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B62378C31F0501F1004DE0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B62378C51F0501F1004DE0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B62378C81F0501F1004DE0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B62378CA1F0501F1004DE0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62378CF1F0501F1004DE0DB /* RealmStautsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmStautsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62378D31F0501F1004DE0DB /* RealmStautsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmStautsTests.m; sourceTree = "<group>"; };
+		B62378D51F0501F1004DE0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62378DA1F0501F2004DE0DB /* RealmStautsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmStautsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62378DE1F0501F2004DE0DB /* RealmStautsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmStautsUITests.m; sourceTree = "<group>"; };
+		B62378E01F0501F2004DE0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62379B41F0506E7004DE0DB /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B62379B51F0506E7004DE0DB /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B62379B71F050909004DE0DB /* DataSoure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataSoure; sourceTree = "<group>"; };
+		B62379B91F050C79004DE0DB /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		B62379BA1F050C79004DE0DB /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		B62379BC1F050CBA004DE0DB /* TableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
+		B62379BD1F050CBB004DE0DB /* TableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
+		B62379BF1F050CE2004DE0DB /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		B62379C01F050CE2004DE0DB /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		B62379C21F05EF2A004DE0DB /* CPUMemoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPUMemoryManager.h; sourceTree = "<group>"; };
+		B62379C31F05EF2A004DE0DB /* CPUMemoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPUMemoryManager.m; sourceTree = "<group>"; };
+		B62414211E289D8F0039E922 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B62414231E2B0B380039E922 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		B62414251E2B3DD30039E922 /* MyPods.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPods.entitlements; sourceTree = "<group>"; };
+		B6257F0C1F55759E00D834BC /* AutolayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutController.h; sourceTree = "<group>"; };
+		B6257F0D1F55759E00D834BC /* AutolayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutController.m; sourceTree = "<group>"; };
+		B6257F0F1F5575D100D834BC /* MasonryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryController.h; sourceTree = "<group>"; };
+		B6257F101F5575D100D834BC /* MasonryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryController.m; sourceTree = "<group>"; };
+		B6257F121F5575F200D834BC /* JSPacthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPacthController.h; sourceTree = "<group>"; };
+		B6257F131F5575F200D834BC /* JSPacthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPacthController.m; sourceTree = "<group>"; };
+		B6257F151F55760C00D834BC /* SocketController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketController.h; sourceTree = "<group>"; };
+		B6257F161F55760C00D834BC /* SocketController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketController.m; sourceTree = "<group>"; };
+		B6257F181F56534700D834BC /* BageButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BageButtonController.h; sourceTree = "<group>"; };
+		B6257F191F56534800D834BC /* BageButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BageButtonController.m; sourceTree = "<group>"; };
+		B62C56C01E790B7E0009A68B /* SocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		B62C56C11E790B7E0009A68B /* SocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		B6500B991D6B053700BF36B6 /* UpImageDownTextBageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpImageDownTextBageButton.h; sourceTree = "<group>"; };
+		B6500B9A1D6B053700BF36B6 /* UpImageDownTextBageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpImageDownTextBageButton.m; sourceTree = "<group>"; };
+		B6500B9C1D6B0EB300BF36B6 /* 消息数量.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息数量.png"; sourceTree = "<group>"; };
+		B6500B9E1D6B14C200BF36B6 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
+		B65BD4381F063B1A00D18CEC /* ModifyStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyStateController.h; sourceTree = "<group>"; };
+		B65BD4391F063B1A00D18CEC /* ModifyStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyStateController.m; sourceTree = "<group>"; };
+		B6650A951E1B6A4E00701E36 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		B6650A971E1BB5CB00701E36 /* JSPatchCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchCode.h; sourceTree = "<group>"; };
+		B6650A981E1BB5CB00701E36 /* JSPatchCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchCode.m; sourceTree = "<group>"; };
+		B6BE296C1F1C84D0007EF6B2 /* RouteConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteConstants.h; sourceTree = "<group>"; };
+		B6BE296D1F1C84E6007EF6B2 /* MyPods-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPods-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6BE296E1F1C84E7007EF6B2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B6C0FC4E1BA95B3500A32A2A /* MyPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C0FC521BA95B3500A32A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C0FC531BA95B3500A32A2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6C0FC551BA95B3500A32A2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6C0FC561BA95B3500A32A2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6C0FC5C1BA95B3500A32A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6C0FC5E1BA95B3500A32A2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6C0FC611BA95B3500A32A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B6C0FC671BA95B3500A32A2A /* MyPodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C0FC6C1BA95B3600A32A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C0FC6D1BA95B3600A32A2A /* MyPodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPodsTests.m; sourceTree = "<group>"; };
+		B6DCCE191F8B6BA300483B5F /* NetWorkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkEngine.h; sourceTree = "<group>"; };
+		B6DCCE1A1F8B6BA300483B5F /* NetWorkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkEngine.m; sourceTree = "<group>"; };
+		B6FDCE441E794EC7000F5408 /* severSoket.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = severSoket.js; sourceTree = "<group>"; };
+		B6FDCE461E7A78D2000F5408 /* WebSocketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManger.h; sourceTree = "<group>"; };
+		B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManger.m; sourceTree = "<group>"; };
+		B6FDCE491E7A8C14000F5408 /* CoSocketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoSocketManger.h; sourceTree = "<group>"; };
+		B6FDCE4A1E7A8C14000F5408 /* CoSocketManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoSocketManger.m; sourceTree = "<group>"; };
+		B6FDCE4C1E7A9DBC000F5408 /* webServer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = webServer.js; sourceTree = "<group>"; };
+		CAC284EF2D2CB40E4259153D /* libPods-RealmStauts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmStauts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9F59464F3B4FEB8A1CD4E6 /* Pods-MyPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPods/Pods-MyPods.debug.xcconfig"; sourceTree = "<group>"; };
+		D7059355DD6E38DAB46D00B8 /* Pods-RealmStauts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmStauts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmStauts/Pods-RealmStauts.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B62378B41F0501F1004DE0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9643FEC61F24E40995240613 /* libPods-RealmStauts.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378CC1F0501F1004DE0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378D71F0501F2004DE0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC4B1BA95B3500A32A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76AE6FA27AE39760D1BB3FC3 /* libPods-MyPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC641BA95B3500A32A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		625E74C0A6084DA86AE16D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B62414211E289D8F0039E922 /* libz.tbd */,
+				B34C7508DE4DB755D973800B /* libPods-MyPods.a */,
+				CAC284EF2D2CB40E4259153D /* libPods-RealmStauts.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E1541DD35E73BABED592FD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F59464F3B4FEB8A1CD4E6 /* Pods-MyPods.debug.xcconfig */,
+				7CA712A01A5B3FBE3430DEEC /* Pods-MyPods.release.xcconfig */,
+				D7059355DD6E38DAB46D00B8 /* Pods-RealmStauts.debug.xcconfig */,
+				4862F0D7619E5480A9409487 /* Pods-RealmStauts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B60603BA1C58768D00221774 /* Conreollers */ = {
+			isa = PBXGroup;
+			children = (
+				B60603BC1C5876B100221774 /* ViewController.h */,
+				B60603BD1C5876B100221774 /* ViewController.m */,
+				B6257F0C1F55759E00D834BC /* AutolayoutController.h */,
+				B6257F0D1F55759E00D834BC /* AutolayoutController.m */,
+				B6257F0F1F5575D100D834BC /* MasonryController.h */,
+				B6257F101F5575D100D834BC /* MasonryController.m */,
+				B6257F121F5575F200D834BC /* JSPacthController.h */,
+				B6257F131F5575F200D834BC /* JSPacthController.m */,
+				B6257F151F55760C00D834BC /* SocketController.h */,
+				B6257F161F55760C00D834BC /* SocketController.m */,
+				B6257F181F56534700D834BC /* BageButtonController.h */,
+				B6257F191F56534800D834BC /* BageButtonController.m */,
+				B6500B991D6B053700BF36B6 /* UpImageDownTextBageButton.h */,
+				B6500B9A1D6B053700BF36B6 /* UpImageDownTextBageButton.m */,
+				B6500B9C1D6B0EB300BF36B6 /* 消息数量.png */,
+				B6500B9E1D6B14C200BF36B6 /* order.png */,
+			);
+			path = Conreollers;
+			sourceTree = "<group>";
+		};
+		B60603BB1C58769A00221774 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B60603BF1C5876CC00221774 /* UIView+Masonry_LJC.h */,
+				B60603C01C5876CC00221774 /* UIView+Masonry_LJC.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B62378551EFD1068004DE0DB /* RealmStore */ = {
+			isa = PBXGroup;
+			children = (
+				B62378561EFD1068004DE0DB /* SQL.h */,
+				B62378571EFD1068004DE0DB /* SQL.m */,
+				B623785C1EFD13A7004DE0DB /* RegisterController.h */,
+				B623785D1EFD13A7004DE0DB /* RegisterController.m */,
+				B62378591EFD1369004DE0DB /* UserListController.h */,
+				B623785A1EFD1369004DE0DB /* UserListController.m */,
+				B62378A71F02014C004DE0DB /* ChangePasswordController.h */,
+				B62378A81F02014C004DE0DB /* ChangePasswordController.m */,
+				B62378AA1F0201DB004DE0DB /* DetailController.h */,
+				B62378AB1F0201DB004DE0DB /* DetailController.m */,
+				B62378AD1F038045004DE0DB /* Detail2Controller.h */,
+				B62378AE1F038045004DE0DB /* Detail2Controller.m */,
+				B623785F1EFD1431004DE0DB /* UserModel.h */,
+				B62378601EFD1431004DE0DB /* UserModel.m */,
+			);
+			path = RealmStore;
+			sourceTree = "<group>";
+		};
+		B62378B81F0501F1004DE0DB /* RealmStauts */ = {
+			isa = PBXGroup;
+			children = (
+				B62378BC1F0501F1004DE0DB /* AppDelegate.h */,
+				B62378BD1F0501F1004DE0DB /* AppDelegate.m */,
+				B62379C21F05EF2A004DE0DB /* CPUMemoryManager.h */,
+				B62379C31F05EF2A004DE0DB /* CPUMemoryManager.m */,
+				B62379B41F0506E7004DE0DB /* TableViewController.h */,
+				B62379B51F0506E7004DE0DB /* TableViewController.m */,
+				B65BD4381F063B1A00D18CEC /* ModifyStateController.h */,
+				B65BD4391F063B1A00D18CEC /* ModifyStateController.m */,
+				B62379B91F050C79004DE0DB /* TableViewCell.h */,
+				B62379BA1F050C79004DE0DB /* TableViewCell.m */,
+				B62379BC1F050CBA004DE0DB /* TableModel.h */,
+				B62379BD1F050CBB004DE0DB /* TableModel.m */,
+				B62379BF1F050CE2004DE0DB /* ViewModel.h */,
+				B62379C01F050CE2004DE0DB /* ViewModel.m */,
+				B62378C21F0501F1004DE0DB /* Main.storyboard */,
+				B62378C51F0501F1004DE0DB /* Assets.xcassets */,
+				B62378C71F0501F1004DE0DB /* LaunchScreen.storyboard */,
+				B62378CA1F0501F1004DE0DB /* Info.plist */,
+				B62379B71F050909004DE0DB /* DataSoure */,
+				B62378B91F0501F1004DE0DB /* Supporting Files */,
+			);
+			path = RealmStauts;
+			sourceTree = "<group>";
+		};
+		B62378B91F0501F1004DE0DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B62378BA1F0501F1004DE0DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B62378D21F0501F1004DE0DB /* RealmStautsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B62378D31F0501F1004DE0DB /* RealmStautsTests.m */,
+				B62378D51F0501F1004DE0DB /* Info.plist */,
+			);
+			path = RealmStautsTests;
+			sourceTree = "<group>";
+		};
+		B62378DD1F0501F2004DE0DB /* RealmStautsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B62378DE1F0501F2004DE0DB /* RealmStautsUITests.m */,
+				B62378E01F0501F2004DE0DB /* Info.plist */,
+			);
+			path = RealmStautsUITests;
+			sourceTree = "<group>";
+		};
+		B62C56BF1E790B5E0009A68B /* SocketManger */ = {
+			isa = PBXGroup;
+			children = (
+				B6FDCE431E794EC7000F5408 /* sever */,
+				B62C56C01E790B7E0009A68B /* SocketManager.h */,
+				B62C56C11E790B7E0009A68B /* SocketManager.m */,
+				B6FDCE491E7A8C14000F5408 /* CoSocketManger.h */,
+				B6FDCE4A1E7A8C14000F5408 /* CoSocketManger.m */,
+				B6FDCE461E7A78D2000F5408 /* WebSocketManger.h */,
+				B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */,
+			);
+			path = SocketManger;
+			sourceTree = "<group>";
+		};
+		B6C0FC451BA95B3500A32A2A = {
+			isa = PBXGroup;
+			children = (
+				B6C0FC501BA95B3500A32A2A /* MyPods */,
+				B6C0FC6A1BA95B3600A32A2A /* MyPodsTests */,
+				B62378B81F0501F1004DE0DB /* RealmStauts */,
+				B62378D21F0501F1004DE0DB /* RealmStautsTests */,
+				B62378DD1F0501F2004DE0DB /* RealmStautsUITests */,
+				B6C0FC4F1BA95B3500A32A2A /* Products */,
+				7E1541DD35E73BABED592FD1 /* Pods */,
+				625E74C0A6084DA86AE16D61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6C0FC4F1BA95B3500A32A2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0FC4E1BA95B3500A32A2A /* MyPods.app */,
+				B6C0FC671BA95B3500A32A2A /* MyPodsTests.xctest */,
+				B62378B71F0501F1004DE0DB /* RealmStauts.app */,
+				B62378CF1F0501F1004DE0DB /* RealmStautsTests.xctest */,
+				B62378DA1F0501F2004DE0DB /* RealmStautsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6C0FC501BA95B3500A32A2A /* MyPods */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCCE181F8B6BA300483B5F /* NetWorkEngine */,
+				B62414251E2B3DD30039E922 /* MyPods.entitlements */,
+				B6BE296E1F1C84E7007EF6B2 /* Router.swift */,
+				B6BE296C1F1C84D0007EF6B2 /* RouteConstants.h */,
+				B6C0FC551BA95B3500A32A2A /* AppDelegate.h */,
+				B6C0FC561BA95B3500A32A2A /* AppDelegate.m */,
+				B6650A971E1BB5CB00701E36 /* JSPatchCode.h */,
+				B6650A981E1BB5CB00701E36 /* JSPatchCode.m */,
+				B6650A951E1B6A4E00701E36 /* demo.js */,
+				B62414231E2B0B380039E922 /* main.js */,
+				B62378551EFD1068004DE0DB /* RealmStore */,
+				B62C56BF1E790B5E0009A68B /* SocketManger */,
+				B60603BA1C58768D00221774 /* Conreollers */,
+				B60603BB1C58769A00221774 /* Views */,
+				B6C0FC5B1BA95B3500A32A2A /* Main.storyboard */,
+				B6C0FC5E1BA95B3500A32A2A /* Images.xcassets */,
+				B6C0FC601BA95B3500A32A2A /* LaunchScreen.xib */,
+				B6C0FC511BA95B3500A32A2A /* Supporting Files */,
+				B6BE296D1F1C84E6007EF6B2 /* MyPods-Bridging-Header.h */,
+			);
+			path = MyPods;
+			sourceTree = "<group>";
+		};
+		B6C0FC511BA95B3500A32A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0FC521BA95B3500A32A2A /* Info.plist */,
+				B6C0FC531BA95B3500A32A2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6C0FC6A1BA95B3600A32A2A /* MyPodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0FC6D1BA95B3600A32A2A /* MyPodsTests.m */,
+				B6C0FC6B1BA95B3600A32A2A /* Supporting Files */,
+			);
+			path = MyPodsTests;
+			sourceTree = "<group>";
+		};
+		B6C0FC6B1BA95B3600A32A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C0FC6C1BA95B3600A32A2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6DCCE181F8B6BA300483B5F /* NetWorkEngine */ = {
+			isa = PBXGroup;
+			children = (
+				B6DCCE191F8B6BA300483B5F /* NetWorkEngine.h */,
+				B6DCCE1A1F8B6BA300483B5F /* NetWorkEngine.m */,
+			);
+			path = NetWorkEngine;
+			sourceTree = "<group>";
+		};
+		B6FDCE431E794EC7000F5408 /* sever */ = {
+			isa = PBXGroup;
+			children = (
+				B6FDCE4C1E7A9DBC000F5408 /* webServer.js */,
+				B6FDCE441E794EC7000F5408 /* severSoket.js */,
+			);
+			path = sever;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B62378B61F0501F1004DE0DB /* RealmStauts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62378E11F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStauts" */;
+			buildPhases = (
+				78F2A263617843CE0FFF5DE5 /* [CP] Check Pods Manifest.lock */,
+				B62378B31F0501F1004DE0DB /* Sources */,
+				B62378B41F0501F1004DE0DB /* Frameworks */,
+				B62378B51F0501F1004DE0DB /* Resources */,
+				7213AAC59479139E8367356C /* [CP] Embed Pods Frameworks */,
+				F16E4008F407692A75825C8B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmStauts;
+			productName = RealmStauts;
+			productReference = B62378B71F0501F1004DE0DB /* RealmStauts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B62378CE1F0501F1004DE0DB /* RealmStautsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62378E41F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStautsTests" */;
+			buildPhases = (
+				B62378CB1F0501F1004DE0DB /* Sources */,
+				B62378CC1F0501F1004DE0DB /* Frameworks */,
+				B62378CD1F0501F1004DE0DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62378D11F0501F1004DE0DB /* PBXTargetDependency */,
+			);
+			name = RealmStautsTests;
+			productName = RealmStautsTests;
+			productReference = B62378CF1F0501F1004DE0DB /* RealmStautsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B62378D91F0501F2004DE0DB /* RealmStautsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B62378E71F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStautsUITests" */;
+			buildPhases = (
+				B62378D61F0501F2004DE0DB /* Sources */,
+				B62378D71F0501F2004DE0DB /* Frameworks */,
+				B62378D81F0501F2004DE0DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B62378DC1F0501F2004DE0DB /* PBXTargetDependency */,
+			);
+			name = RealmStautsUITests;
+			productName = RealmStautsUITests;
+			productReference = B62378DA1F0501F2004DE0DB /* RealmStautsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B6C0FC4D1BA95B3500A32A2A /* MyPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C0FC711BA95B3600A32A2A /* Build configuration list for PBXNativeTarget "MyPods" */;
+			buildPhases = (
+				C645852A5F148601FC303DD6 /* [CP] Check Pods Manifest.lock */,
+				6A98FC31395090F5E4F013E2 /* [CP] Check Pods Manifest.lock */,
+				B6C0FC4A1BA95B3500A32A2A /* Sources */,
+				B6C0FC4B1BA95B3500A32A2A /* Frameworks */,
+				B6C0FC4C1BA95B3500A32A2A /* Resources */,
+				337A5F3A11266EDA3B28BE4E /* [CP] Embed Pods Frameworks */,
+				F664B8002F3E19DEAC9077EC /* [CP] Copy Pods Resources */,
+				FC3C080807A8619149F27CBB /* 📦 Embed Pods Frameworks */,
+				9B7E2A6B24D4B069CBF5198D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPods;
+			productName = MyPods;
+			productReference = B6C0FC4E1BA95B3500A32A2A /* MyPods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6C0FC661BA95B3500A32A2A /* MyPodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C0FC741BA95B3600A32A2A /* Build configuration list for PBXNativeTarget "MyPodsTests" */;
+			buildPhases = (
+				B6C0FC631BA95B3500A32A2A /* Sources */,
+				B6C0FC641BA95B3500A32A2A /* Frameworks */,
+				B6C0FC651BA95B3500A32A2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6C0FC691BA95B3500A32A2A /* PBXTargetDependency */,
+			);
+			name = MyPodsTests;
+			productName = MyPodsTests;
+			productReference = B6C0FC671BA95B3500A32A2A /* MyPodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6C0FC461BA95B3500A32A2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Youjuke;
+				TargetAttributes = {
+					B62378B61F0501F1004DE0DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					B62378CE1F0501F1004DE0DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B62378B61F0501F1004DE0DB;
+					};
+					B62378D91F0501F2004DE0DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B62378B61F0501F1004DE0DB;
+					};
+					B6C0FC4D1BA95B3500A32A2A = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = J4E37J446A;
+						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					B6C0FC661BA95B3500A32A2A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B6C0FC4D1BA95B3500A32A2A;
+					};
+				};
+			};
+			buildConfigurationList = B6C0FC491BA95B3500A32A2A /* Build configuration list for PBXProject "MyPods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6C0FC451BA95B3500A32A2A;
+			productRefGroup = B6C0FC4F1BA95B3500A32A2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6C0FC4D1BA95B3500A32A2A /* MyPods */,
+				B6C0FC661BA95B3500A32A2A /* MyPodsTests */,
+				B62378B61F0501F1004DE0DB /* RealmStauts */,
+				B62378CE1F0501F1004DE0DB /* RealmStautsTests */,
+				B62378D91F0501F2004DE0DB /* RealmStautsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B62378B51F0501F1004DE0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62378C91F0501F1004DE0DB /* LaunchScreen.storyboard in Resources */,
+				B62379B81F050909004DE0DB /* DataSoure in Resources */,
+				B62378C61F0501F1004DE0DB /* Assets.xcassets in Resources */,
+				B62378C41F0501F1004DE0DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378CD1F0501F1004DE0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378D81F0501F2004DE0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC4C1BA95B3500A32A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C0FC5D1BA95B3500A32A2A /* Main.storyboard in Resources */,
+				B6500B9D1D6B0EB300BF36B6 /* 消息数量.png in Resources */,
+				B6C0FC621BA95B3500A32A2A /* LaunchScreen.xib in Resources */,
+				B6FDCE451E794EC7000F5408 /* severSoket.js in Resources */,
+				B6650A961E1B6A4E00701E36 /* demo.js in Resources */,
+				B6FDCE4D1E7A9DBC000F5408 /* webServer.js in Resources */,
+				B62414241E2B0B380039E922 /* main.js in Resources */,
+				B6C0FC5F1BA95B3500A32A2A /* Images.xcassets in Resources */,
+				B6500B9F1D6B14C200BF36B6 /* order.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC651BA95B3500A32A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		337A5F3A11266EDA3B28BE4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPods/Pods-MyPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A98FC31395090F5E4F013E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7213AAC59479139E8367356C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmStauts/Pods-RealmStauts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F2A263617843CE0FFF5DE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7E2A6B24D4B069CBF5198D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPods/Pods-MyPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C645852A5F148601FC303DD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F16E4008F407692A75825C8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmStauts/Pods-RealmStauts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F664B8002F3E19DEAC9077EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPods/Pods-MyPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC3C080807A8619149F27CBB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPods/Pods-MyPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B62378B31F0501F1004DE0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62379C41F05EF2A004DE0DB /* CPUMemoryManager.m in Sources */,
+				B62379C11F050CE2004DE0DB /* ViewModel.m in Sources */,
+				B62378BE1F0501F1004DE0DB /* AppDelegate.m in Sources */,
+				B62379BB1F050C79004DE0DB /* TableViewCell.m in Sources */,
+				B62379B61F0506E7004DE0DB /* TableViewController.m in Sources */,
+				B62379BE1F050CBB004DE0DB /* TableModel.m in Sources */,
+				B62378BB1F0501F1004DE0DB /* main.m in Sources */,
+				B65BD43A1F063B1A00D18CEC /* ModifyStateController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378CB1F0501F1004DE0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62378D41F0501F1004DE0DB /* RealmStautsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B62378D61F0501F2004DE0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62378DF1F0501F2004DE0DB /* RealmStautsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC4A1BA95B3500A32A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62378A91F02014C004DE0DB /* ChangePasswordController.m in Sources */,
+				B62378581EFD1068004DE0DB /* SQL.m in Sources */,
+				B6257F111F5575D200D834BC /* MasonryController.m in Sources */,
+				B62378AC1F0201DB004DE0DB /* DetailController.m in Sources */,
+				B6257F1A1F56534800D834BC /* BageButtonController.m in Sources */,
+				B6FDCE4B1E7A8C14000F5408 /* CoSocketManger.m in Sources */,
+				B60603C11C5876CC00221774 /* UIView+Masonry_LJC.m in Sources */,
+				B6C0FC571BA95B3500A32A2A /* AppDelegate.m in Sources */,
+				B6C0FC541BA95B3500A32A2A /* main.m in Sources */,
+				B6DCCE1B1F8B6BA300483B5F /* NetWorkEngine.m in Sources */,
+				B6257F171F55760C00D834BC /* SocketController.m in Sources */,
+				B62378AF1F038045004DE0DB /* Detail2Controller.m in Sources */,
+				B623785B1EFD1369004DE0DB /* UserListController.m in Sources */,
+				B6500B9B1D6B053700BF36B6 /* UpImageDownTextBageButton.m in Sources */,
+				B6BE296F1F1C84E7007EF6B2 /* Router.swift in Sources */,
+				B6FDCE481E7A78D2000F5408 /* WebSocketManger.m in Sources */,
+				B6257F0E1F55759E00D834BC /* AutolayoutController.m in Sources */,
+				B62378611EFD1431004DE0DB /* UserModel.m in Sources */,
+				B623785E1EFD13A7004DE0DB /* RegisterController.m in Sources */,
+				B60603BE1C5876B100221774 /* ViewController.m in Sources */,
+				B62C56C21E790B7E0009A68B /* SocketManager.m in Sources */,
+				B6650A991E1BB5CB00701E36 /* JSPatchCode.m in Sources */,
+				B6257F141F5575F200D834BC /* JSPacthController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6C0FC631BA95B3500A32A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6C0FC6E1BA95B3600A32A2A /* MyPodsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B62378D11F0501F1004DE0DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62378B61F0501F1004DE0DB /* RealmStauts */;
+			targetProxy = B62378D01F0501F1004DE0DB /* PBXContainerItemProxy */;
+		};
+		B62378DC1F0501F2004DE0DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62378B61F0501F1004DE0DB /* RealmStauts */;
+			targetProxy = B62378DB1F0501F2004DE0DB /* PBXContainerItemProxy */;
+		};
+		B6C0FC691BA95B3500A32A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6C0FC4D1BA95B3500A32A2A /* MyPods */;
+			targetProxy = B6C0FC681BA95B3500A32A2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B62378C21F0501F1004DE0DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62378C31F0501F1004DE0DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B62378C71F0501F1004DE0DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62378C81F0501F1004DE0DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B6C0FC5B1BA95B3500A32A2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6C0FC5C1BA95B3500A32A2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6C0FC601BA95B3500A32A2A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6C0FC611BA95B3500A32A2A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B62378E21F0501F2004DE0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7059355DD6E38DAB46D00B8 /* Pods-RealmStauts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RealmStauts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStauts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B62378E31F0501F2004DE0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4862F0D7619E5480A9409487 /* Pods-RealmStauts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RealmStauts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStauts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B62378E51F0501F2004DE0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = RealmStautsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStautsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmStauts.app/RealmStauts";
+			};
+			name = Debug;
+		};
+		B62378E61F0501F2004DE0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = RealmStautsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStautsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealmStauts.app/RealmStauts";
+			};
+			name = Release;
+		};
+		B62378E81F0501F2004DE0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = RealmStautsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStautsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RealmStauts;
+			};
+			name = Debug;
+		};
+		B62378E91F0501F2004DE0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = RealmStautsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youjuke.RealmStautsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RealmStauts;
+			};
+			name = Release;
+		};
+		B6C0FC6F1BA95B3600A32A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		B6C0FC701BA95B3600A32A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6C0FC721BA95B3600A32A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9F59464F3B4FEB8A1CD4E6 /* Pods-MyPods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyPods/MyPods.entitlements;
+				DEVELOPMENT_TEAM = J4E37J446A;
+				INFOPLIST_FILE = MyPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youjuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyPods/MyPods-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B6C0FC731BA95B3600A32A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA712A01A5B3FBE3430DEEC /* Pods-MyPods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyPods/MyPods.entitlements;
+				DEVELOPMENT_TEAM = J4E37J446A;
+				INFOPLIST_FILE = MyPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youjuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyPods/MyPods-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B6C0FC751BA95B3600A32A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyPodsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youjuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPods.app/MyPods";
+			};
+			name = Debug;
+		};
+		B6C0FC761BA95B3600A32A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyPodsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youjuke.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPods.app/MyPods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B62378E11F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStauts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62378E21F0501F2004DE0DB /* Debug */,
+				B62378E31F0501F2004DE0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62378E41F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStautsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62378E51F0501F2004DE0DB /* Debug */,
+				B62378E61F0501F2004DE0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B62378E71F0501F2004DE0DB /* Build configuration list for PBXNativeTarget "RealmStautsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B62378E81F0501F2004DE0DB /* Debug */,
+				B62378E91F0501F2004DE0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C0FC491BA95B3500A32A2A /* Build configuration list for PBXProject "MyPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C0FC6F1BA95B3600A32A2A /* Debug */,
+				B6C0FC701BA95B3600A32A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C0FC711BA95B3600A32A2A /* Build configuration list for PBXNativeTarget "MyPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C0FC721BA95B3600A32A2A /* Debug */,
+				B6C0FC731BA95B3600A32A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C0FC741BA95B3600A32A2A /* Build configuration list for PBXNativeTarget "MyPodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C0FC751BA95B3600A32A2A /* Debug */,
+				B6C0FC761BA95B3600A32A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6C0FC461BA95B3500A32A2A /* Project object */;
+}

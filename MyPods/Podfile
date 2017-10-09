@@ -1,0 +1,74 @@
+platform:ios,'8.0'
+    
+pod 'AFNetworking','~>3.1.0'
+pod 'Masonry', '~> 1.0.1'
+pod 'Realm', '~> 2.8.3'
+pod 'JSONKit-NoWarning', '~> 1.1'
+pod 'MBProgressHUD', '~> 0.8'
+pod 'MJRefresh', '~> 2.4.8'
+pod 'MJExtension', '~> 2.5.10'
+pod 'SDWebImage', '~> 3.7.3'
+
+target 'MyPods' do
+
+#基于Socket封装的IM库
+pod 'CocoaAsyncSocket', '~> 7.5.1'
+#WebScoket最具代表性的一个第三方框架SocketRocket
+pod 'SocketRocket', '~> 0.5.1'
+
+#facebook 用于提高UI性能的框架 该库被重命名为Texture
+pod 'AsyncDisplayKit','~> 1.9.81'
+# 组件化路由设计 ，最低支持ios8.0
+pod 'JLRoutes', '~> 2.0.1'
+
+#用于js脚本下发的轻量框架 https://github.com/bang590/JSPatch
+pod 'JSPatch', '~> 1.1.2'
+pod 'JSPatch/Extensions'
+#提供调用任意 C 函数的接口
+pod 'JSPatch/JPCFunction'
+#提供了一些常用 CoreFoundation C 函数接口的转接
+pod 'JSPatch/JPCFunctionBinder'
+#JSPatch 加载工具
+#生成RSA密钥 命令行依次写入
+#cd 文件夹
+#openssl
+#genrsa -out rsatest_private_key.pem 1024
+#pkcs8 -topk8 -inform PEM -in rsatest_private_key.pem -outform PEM –nocrypt
+#rsa -in rsatest_private_key.pem -pubout -out rsatest_public_key.pem
+
+#配置
+
+#文本形式打开rsatest_public_key.pem替换 JPLoader.h 里的 publicKey。
+#打开rsatest_private_key.pem替换tools/pack.php 里的privateKey。
+#设 JPLoader.h 的 rootUrl 为你的服务器地址。
+
+#脚本打包
+
+#复制tools包含pack.php的文件夹放在桌面（其他地方也行）。
+#把测试成功的main.js和其他js文件放入tools文件夹。
+#通过命令行 cd 命令到此文件夹。
+#敲入命令 php packer.php main.js，文件夹下会生成一个v1.zip的包。
+#脚本打包后的文件存放在服务器的路径：${rootUrl}/${appVersion}/${patchFile}。
+
+pod 'JSPatch/Loader'
+
+end
+
+#####多target工程
+
+target 'RealmStauts' do
+    
+   
+end
+
+
+
+
+
+
+
+
+
+
+
+

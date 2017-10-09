@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadController">
+            <connections>
+                <outlet property="progressView" destination="g8u-Qo-ZcU" id="zUd-d9-wvA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="g8u-Qo-ZcU">
+                    <rect key="frame" x="51" y="56" width="495" height="2"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-XO-lhc">
+                    <rect key="frame" x="111" y="115" width="30" height="30"/>
+                    <state key="normal" title="下载">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadBtnClicked" destination="-1" eventType="touchUpInside" id="34d-14-Il6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFY-EE-UrD">
+                    <rect key="frame" x="392" y="115" width="30" height="30"/>
+                    <state key="normal" title="暂停">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pauseBtnClicked" destination="-1" eventType="touchUpInside" id="HKI-pb-ncu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgw-rP-ToR">
+                    <rect key="frame" x="111" y="184" width="30" height="30"/>
+                    <state key="normal" title="弹幕">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tanMuAction:" destination="-1" eventType="touchUpInside" id="J11-Ve-kSZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mgw-rP-ToR" firstAttribute="top" secondItem="zwX-XO-lhc" secondAttribute="bottom" constant="39" id="Bd0-mY-QGA"/>
+                <constraint firstAttribute="trailing" secondItem="g8u-Qo-ZcU" secondAttribute="trailing" constant="54" id="RgY-4p-vdl"/>
+                <constraint firstAttribute="trailing" secondItem="tFY-EE-UrD" secondAttribute="trailing" constant="178" id="UCA-Je-z3w"/>
+                <constraint firstItem="mgw-rP-ToR" firstAttribute="leading" secondItem="zwX-XO-lhc" secondAttribute="leading" id="VaZ-kg-CxY"/>
+                <constraint firstItem="tFY-EE-UrD" firstAttribute="top" secondItem="g8u-Qo-ZcU" secondAttribute="bottom" constant="57" id="XSV-UJ-C4z"/>
+                <constraint firstItem="zwX-XO-lhc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="111" id="d1r-rY-wNK"/>
+                <constraint firstItem="g8u-Qo-ZcU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="51" id="dR0-jP-iv9"/>
+                <constraint firstItem="g8u-Qo-ZcU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="56" id="t6m-X2-ASJ"/>
+                <constraint firstItem="tFY-EE-UrD" firstAttribute="baseline" secondItem="zwX-XO-lhc" secondAttribute="baseline" id="zsT-fm-248"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
