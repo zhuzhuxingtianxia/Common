@@ -7,7 +7,6 @@
 //
 
 #import "UpImageDownTextBageButton.h"
-#import <objc/objc-runtime.h>
 
 @interface UpImageDownTextBageButton ()
 
