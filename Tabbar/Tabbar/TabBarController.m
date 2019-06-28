@@ -39,11 +39,11 @@
     [self.tabBar setTranslucent:NO];
     [self.tabBar setBarTintColor:[UIColor grayColor]];
     [self.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
-    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back@2x"]];
+    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
     self.delegate = self;
     
     rightButton = [[UIBarButtonItem alloc]
-                   initWithImage:[UIImage imageNamed:@"nav_button_add@2x"]
+                   initWithImage:[UIImage imageNamed:@"nav_button_add"]
                    style:UIBarButtonItemStylePlain
                    target:self
                    action:@selector(showAddMenu:)];
@@ -118,9 +118,9 @@
     _viewMenu = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width-126, 5, 116, 93)];
     
     UIButton *button0 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 116, 50)];
-    [button0 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_0@2x"] forState:UIControlStateNormal];
-    [button0 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_0_down@2x"] forState:UIControlStateHighlighted];
-    [button0 setImage:[UIImage imageNamed:@"nav_menu_icon_0@2x"] forState:UIControlStateNormal];
+    [button0 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_0"] forState:UIControlStateNormal];
+    [button0 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_0_down"] forState:UIControlStateHighlighted];
+    [button0 setImage:[UIImage imageNamed:@"nav_menu_icon_0"] forState:UIControlStateNormal];
     [button0 setImageEdgeInsets:UIEdgeInsetsMake(7, 0, 0, 0)];
     [button0.titleLabel setFont:[UIFont systemFontOfSize:16]];
     [button0.titleLabel setTextColor:[UIColor whiteColor]];
@@ -131,9 +131,9 @@
 //    [button0 addTarget:self action:@selector(addFriendsClick:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *button1 = [[UIButton alloc] initWithFrame:CGRectMake(0, 51, 116, 42)];
-    [button1 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_1@2x"] forState:UIControlStateNormal];
-    [button1 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_1_down@2x"] forState:UIControlStateHighlighted];
-    [button1 setImage:[UIImage imageNamed:@"nav_menu_icon_1@2x"] forState:UIControlStateNormal];
+    [button1 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_1"] forState:UIControlStateNormal];
+    [button1 setBackgroundImage:[UIImage imageNamed:@"nav_menu_button_1_down"] forState:UIControlStateHighlighted];
+    [button1 setImage:[UIImage imageNamed:@"nav_menu_icon_1"] forState:UIControlStateNormal];
     [button1 setImageEdgeInsets:UIEdgeInsetsMake(0, -3, 0, 0)];
     [button1.titleLabel setFont:[UIFont systemFontOfSize:16]];
     [button1.titleLabel setTextColor:[UIColor whiteColor]];

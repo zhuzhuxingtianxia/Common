@@ -30,8 +30,8 @@
 {
     self = [super init];
     if (self) {
-        self.tabBarItem.image = [[UIImage imageNamed:@"tab_button_friends@2x"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_button_friends@2x"];
+        self.tabBarItem.image = [[UIImage imageNamed:@"tab_button_friends"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_button_friends"];
         self.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
     }
     return self;
