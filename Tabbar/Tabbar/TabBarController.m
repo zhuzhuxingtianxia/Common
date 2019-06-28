@@ -39,7 +39,9 @@
     [self.tabBar setTranslucent:NO];
     [self.tabBar setBarTintColor:[UIColor grayColor]];
     [self.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
-    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
+//    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
+
     self.delegate = self;
     
     rightButton = [[UIBarButtonItem alloc]
