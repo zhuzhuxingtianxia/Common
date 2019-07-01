@@ -11,6 +11,10 @@
 #import "ContactViewController.h"
 #import "SettingViewController.h"
 #import "MapViewController.h"
+//状态栏高
+#define statusBarH    CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
+#define safeAreaBottomH (statusBarH > 20 ? 34 : 0)
+
 
 @interface TabBarController ()<UITabBarControllerDelegate>
 {
@@ -39,7 +43,12 @@
     [self.tabBar setTranslucent:NO];
     [self.tabBar setBarTintColor:[UIColor grayColor]];
     [self.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
+    UIImage *indicatorImage = [UIImage imageNamed:@"tab_button_select_back"];
+    if (safeAreaBottomH>0) {
+        indicatorImage = [indicatorImage resizableImageWithCapInsets:UIEdgeInsetsMake(safeAreaBottomH, -10, 0, 0) resizingMode:UIImageResizingModeStretch];
+    }
+    
+    [[UITabBar appearance] setSelectionIndicatorImage:indicatorImage];
 //    [self.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"tab_button_select_back"]];
 
     self.delegate = self;
