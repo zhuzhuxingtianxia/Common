@@ -31,7 +31,8 @@ NSTimeInterval TimeCosts[LockTypeCount] = {0};
 int TimeCount = 0;
 
 @interface LockViewController ()
-
+@property(nonatomic,strong)UILabel  *textLabel;
+@property (nonatomic,strong)NSArray *array;
 @end
 
 @implementation LockViewController
@@ -39,11 +40,14 @@ int TimeCount = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.array = @[@"11111"];
+    
     int buttonCount = 5;
     for (int i = 0; i < buttonCount; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(0, 0, 200, 50);
-        button.center = CGPointMake(self.view.frame.size.width / 2, i * 60 + 160);
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+        button.frame = CGRectMake((self.view.frame.size.width - 200)/2, 100+45*i, 200, 40);
+        
         button.tag = pow(10, i + 3);
         [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [button setTitle:[NSString stringWithFormat:@"run (%d)",(int)button.tag] forState:UIControlStateNormal];
@@ -51,29 +55,31 @@ int TimeCount = 0;
         [self.view addSubview:button];
     }
     
-    UIButton *logButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *logButton = [UIButton buttonWithType:UIButtonTypeSystem];
     logButton.frame = CGRectMake(15, [[UIScreen mainScreen] bounds].size.height - 100, 100, 50);
     [logButton setTitle:@"All Costs" forState:UIControlStateNormal];
-    [logButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [logButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [logButton addTarget:self action:@selector(log:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:logButton];
     
-    UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeSystem];
     clearButton.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-115, [[UIScreen mainScreen] bounds].size.height - 100, 100, 50);
     [clearButton setTitle:@"Clear " forState:UIControlStateNormal];
-    [clearButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [clearButton setTitleColor:[UIColor brownColor] forState:UIControlStateNormal];
     [clearButton addTarget:self action:@selector(clear:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:clearButton];
 }
 
 - (void)tap:(UIButton *)sender {
-    NSLog(@"");
+    self.textLabel.text = @"效果对比：\n";
+    NSLog(@"%ld",(long)sender.tag);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self test:(int)sender.tag];
     });
 }
 
 - (void)clear:(id)sender {
+    self.textLabel.text = @"";
     for (NSUInteger i = 0; i < LockTypeCount; i++) {
         TimeCosts[i] = 0;
     }
@@ -82,6 +88,7 @@ int TimeCount = 0;
 }
 
 - (void)log:(id)sender {
+    self.textLabel.text = @"效果对比：\n";
     [self printTimeConst:TimeCosts];
     printf("---- fin (sum:%d) ----\n\n",TimeCount);
 }
@@ -95,6 +102,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             OSSpinLockLock(&lock);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             OSSpinLockUnlock(&lock);
         }
         end = CACurrentMediaTime();
@@ -108,6 +117,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             dispatch_semaphore_signal(lock);
         }
         end = CACurrentMediaTime();
@@ -120,6 +131,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             pthread_mutex_lock(&lock);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             pthread_mutex_unlock(&lock);
         }
         end = CACurrentMediaTime();
@@ -134,6 +147,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             [lock lock];
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             [lock unlock];
         }
         end = CACurrentMediaTime();
@@ -145,6 +160,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             [lock lock];
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             [lock unlock];
         }
         end = CACurrentMediaTime();
@@ -163,6 +180,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             pthread_mutex_lock(&lock);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             pthread_mutex_unlock(&lock);
         }
         end = CACurrentMediaTime();
@@ -175,6 +194,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             [lock lock];
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             [lock unlock];
         }
         end = CACurrentMediaTime();
@@ -187,6 +208,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             [lock lock];
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             [lock unlock];
         }
         end = CACurrentMediaTime();
@@ -198,6 +221,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             pthread_rwlock_wrlock(&rwlock);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             pthread_rwlock_unlock(&rwlock);
         }
         end = CACurrentMediaTime();
@@ -211,6 +236,8 @@ int TimeCount = 0;
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
             os_unfair_lock_lock(unfairLock);
+            NSString *str = self.array.firstObject;
+            NSLog(@"%@",str);
             os_unfair_lock_unlock(unfairLock);
         }
         end = CACurrentMediaTime();
@@ -222,7 +249,10 @@ int TimeCount = 0;
         NSObject *lock = [NSObject new];
         begin = CACurrentMediaTime();
         for (int i = 0; i < count; i++) {
-            @synchronized(lock) {}
+            @synchronized(lock) {
+                NSString *str = self.array.firstObject;
+                NSLog(@"%@",str);
+            }
         }
         end = CACurrentMediaTime();
         TimeCosts[LockTypesynchronized] += end - begin;
@@ -269,8 +299,27 @@ int TimeCount = 0;
     }];
     for (NSString *string in relustArray) {
         printf("%s", [string UTF8String]);
+        self.textLabel.text = [NSString stringWithFormat:@"%@\n%@",self.textLabel.text,string];
     }
 }
+
+#pragma mark -- getter
+
+-(UILabel*)textLabel{
+    if (!_textLabel) {
+        _textLabel = [UILabel new];
+        _textLabel.textColor = [UIColor purpleColor];
+        _textLabel.font = [UIFont systemFontOfSize:14];
+        _textLabel.numberOfLines = 0;
+        _textLabel.textAlignment = NSTextAlignmentLeft;
+        _textLabel.frame = CGRectMake(40, 100+45*4.5, 300, 450);
+       
+        _textLabel.text = @"效果对比：\n";
+        [self.view addSubview:_textLabel];
+    }
+    return _textLabel;
+}
+
 /*
 #pragma mark - Navigation
 
