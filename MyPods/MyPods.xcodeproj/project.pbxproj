@@ -42,6 +42,7 @@
 		B6500B9D1D6B0EB300BF36B6 /* 消息数量.png in Resources */ = {isa = PBXBuildFile; fileRef = B6500B9C1D6B0EB300BF36B6 /* 消息数量.png */; };
 		B6500B9F1D6B14C200BF36B6 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = B6500B9E1D6B14C200BF36B6 /* order.png */; };
 		B65BD43A1F063B1A00D18CEC /* ModifyStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65BD4391F063B1A00D18CEC /* ModifyStateController.m */; };
+		B65D73B522CC39C100129AD3 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65D73B422CC39C100129AD3 /* LockViewController.m */; };
 		B6650A961E1B6A4E00701E36 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = B6650A951E1B6A4E00701E36 /* demo.js */; };
 		B6650A991E1BB5CB00701E36 /* JSPatchCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6650A981E1BB5CB00701E36 /* JSPatchCode.m */; };
 		B6BE296F1F1C84E7007EF6B2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE296E1F1C84E7007EF6B2 /* Router.swift */; };
@@ -150,6 +151,8 @@
 		B6500B9E1D6B14C200BF36B6 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
 		B65BD4381F063B1A00D18CEC /* ModifyStateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyStateController.h; sourceTree = "<group>"; };
 		B65BD4391F063B1A00D18CEC /* ModifyStateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyStateController.m; sourceTree = "<group>"; };
+		B65D73B322CC39C100129AD3 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		B65D73B422CC39C100129AD3 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		B6650A951E1B6A4E00701E36 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		B6650A971E1BB5CB00701E36 /* JSPatchCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchCode.h; sourceTree = "<group>"; };
 		B6650A981E1BB5CB00701E36 /* JSPatchCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchCode.m; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 			children = (
 				B60603BC1C5876B100221774 /* ViewController.h */,
 				B60603BD1C5876B100221774 /* ViewController.m */,
+				B65D73B322CC39C100129AD3 /* LockViewController.h */,
+				B65D73B422CC39C100129AD3 /* LockViewController.m */,
 				B6257F0C1F55759E00D834BC /* AutolayoutController.h */,
 				B6257F0D1F55759E00D834BC /* AutolayoutController.m */,
 				B6257F0F1F5575D100D834BC /* MasonryController.h */,
@@ -844,6 +849,7 @@
 				B6257F1A1F56534800D834BC /* BageButtonController.m in Sources */,
 				B6FDCE4B1E7A8C14000F5408 /* CoSocketManger.m in Sources */,
 				B60603C11C5876CC00221774 /* UIView+Masonry_LJC.m in Sources */,
+				B65D73B522CC39C100129AD3 /* LockViewController.m in Sources */,
 				B6C0FC571BA95B3500A32A2A /* AppDelegate.m in Sources */,
 				B6C0FC541BA95B3500A32A2A /* main.m in Sources */,
 				B6DCCE1B1F8B6BA300483B5F /* NetWorkEngine.m in Sources */,

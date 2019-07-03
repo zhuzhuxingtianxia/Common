@@ -12,7 +12,7 @@
 #define ScreenWidth     ([[UIScreen mainScreen] bounds].size.width)
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property(nonatomic,strong)NSArray *array;
 @end
 
 @implementation ViewController
@@ -20,23 +20,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-   
+    self.array = @[@"AutolayoutController",
+                   @"MasonryController",
+                   @"JSPacthController",
+                   @"LockViewController",
+                   @"SocketController",
+                   @"BageButtonController"];
 }
 
 #pragma mark -- UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return self.array.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    cell.textLabel.text = self.array[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%ld",indexPath.row);
+    NSString *classStr = self.array[indexPath.row];
+    
+    UIViewController *vc = [[NSClassFromString(classStr) alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
