@@ -33,12 +33,18 @@ NSString *const Device_iPhone6 = @"iPhone 6";
 NSString *const Device_iPhone6plus = @"iPhone 6 Plus";
 NSString *const Device_iPhone6S = @"iPhone 6S";
 NSString *const Device_iPhone6Splus = @"iPhone 6S Plus";
+NSString *const Device_iPhoneSE = @"iPhone SE";
 NSString *const Device_iPhone7 = @"iPhone 7";
 NSString *const Device_iPhone7plus = @"iPhone 7 Plus";
 NSString *const Device_iPhone7S = @"iPhone 7S";
 NSString *const Device_iPhone7Splus = @"iPhone 7S Plus";
-//未能识别的iPhone设备
-NSString *const Device_Unrecognized = @"?unrecognized?";
+
+NSString *const Device_iPhone8 = @"iPhone 8";
+NSString *const Device_iPhone8plus = @"iPhone 8 Plus";
+NSString *const Device_iPhoneX = @"iPhone X";
+NSString *const Device_iPhoneXS = @"iPhone XS";
+NSString *const Device_iPhoneXSMax = @"iPhone XS Max";
+NSString *const Device_iPhoneXR = @"iPhone XR";
 
 @implementation UIDevice (ZJDeviceModel)
 - (NSString *)deviceModel{
@@ -52,62 +58,74 @@ NSString *const Device_Unrecognized = @"?unrecognized?";
     
     static NSDictionary* deviceNamesByCode = nil;
     
-    if (!deviceNamesByCode) {deviceNamesByCode = @{
-                                                   @"i386"      : Device_Simulator,
-                                                   @"x86_64"    : Device_Simulator,
-                                                   @"iPod1,1"   : Device_iPod1,
-                                                   @"iPod2,1"   : Device_iPod2,
-                                                   @"iPod3,1"   : Device_iPod3,
-                                                   @"iPod4,1"   : Device_iPod4,
-                                                   @"iPod5,1"   : Device_iPod5,
-                                                   @"iPad2,1"   : Device_iPad2,
-                                                   @"iPad2,2"   : Device_iPad2,
-                                                   @"iPad2,3"   : Device_iPad2,
-                                                   @"iPad2,4"   : Device_iPad2,
-                                                   @"iPad2,5"   : Device_iPadMini1,
-                                                   @"iPad2,6"   : Device_iPadMini1,
-                                                   @"iPad2,7"   : Device_iPadMini1,
-                                                   @"iPhone3,1" : Device_iPhone4,
-                                                   @"iPhone3,2" : Device_iPhone4,
-                                                   @"iPhone3,3" : Device_iPhone4,
-                                                   @"iPhone4,1" : Device_iPhone4S,
-                                                   @"iPhone5,1" : Device_iPhone5,
-                                                   @"iPhone5,2" : Device_iPhone5,
-                                                   @"iPhone5,3" : Device_iPhone5C,
-                                                   @"iPhone5,4" : Device_iPhone5C,
-                                                   @"iPad3,1"   : Device_iPad3,
-                                                   @"iPad3,2"   : Device_iPad3,
-                                                   @"iPad3,3"   : Device_iPad3,
-                                                   @"iPad3,4"   : Device_iPad4,
-                                                   @"iPad3,5"   : Device_iPad4,
-                                                   @"iPad3,6"   : Device_iPad4,
-                                                   @"iPhone6,1" : Device_iPhone5S,
-                                                   @"iPhone6,2" : Device_iPhone5S,
-                                                   @"iPad4,1"   : Device_iPadAir1,
-                                                   @"iPad4,2"   : Device_iPadAir2,
-                                                   @"iPad4,4"   : Device_iPadMini2,
-                                                   @"iPad4,5"   : Device_iPadMini2,
-                                                   @"iPad4,6"   : Device_iPadMini2,
-                                                   @"iPad4,7"   : Device_iPadMini3,
-                                                   @"iPad4,8"   : Device_iPadMini3,
-                                                   @"iPad4,9"   : Device_iPadMini3,
-                                                   @"iPhone7,1" : Device_iPhone6plus,
-                                                   @"iPhone7,2" : Device_iPhone6,
-                                                   @"iPhone8,1" : Device_iPhone6S,
-                                                   @"iPhone8,2" : Device_iPhone6Splus,
-                                                   @"iPhone9,1" : Device_iPhone7plus,
-                                                   @"iPhone9,2" : Device_iPhone7,
-                                                   @"iPhone10,1" : Device_iPhone7S,
-                                                   @"iPhone10,2" : Device_iPhone7Splus,
+    if (!deviceNamesByCode) {
+        deviceNamesByCode = @{
+                              @"i386"      : Device_Simulator,
+                              @"x86_64"    : Device_Simulator,
+                              @"iPod1,1"   : Device_iPod1,
+                              @"iPod2,1"   : Device_iPod2,
+                              @"iPod3,1"   : Device_iPod3,
+                              @"iPod4,1"   : Device_iPod4,
+                              @"iPod5,1"   : Device_iPod5,
+                              @"iPad2,1"   : Device_iPad2,
+                              @"iPad2,2"   : Device_iPad2,
+                              @"iPad2,3"   : Device_iPad2,
+                              @"iPad2,4"   : Device_iPad2,
+                              @"iPad2,5"   : Device_iPadMini1,
+                              @"iPad2,6"   : Device_iPadMini1,
+                              @"iPad2,7"   : Device_iPadMini1,
+                              @"iPhone3,1" : Device_iPhone4,
+                              @"iPhone3,2" : Device_iPhone4,
+                              @"iPhone3,3" : Device_iPhone4,
+                              @"iPhone4,1" : Device_iPhone4S,
+                              @"iPhone5,1" : Device_iPhone5,
+                              @"iPhone5,2" : Device_iPhone5,
+                              @"iPhone5,3" : Device_iPhone5C,
+                              @"iPhone5,4" : Device_iPhone5C,
+                              @"iPad3,1"   : Device_iPad3,
+                              @"iPad3,2"   : Device_iPad3,
+                              @"iPad3,3"   : Device_iPad3,
+                              @"iPad3,4"   : Device_iPad4,
+                              @"iPad3,5"   : Device_iPad4,
+                              @"iPad3,6"   : Device_iPad4,
+                              @"iPhone6,1" : Device_iPhone5S,
+                              @"iPhone6,2" : Device_iPhone5S,
+                              @"iPad4,1"   : Device_iPadAir1,
+                              @"iPad4,2"   : Device_iPadAir2,
+                              @"iPad4,4"   : Device_iPadMini2,
+                              @"iPad4,5"   : Device_iPadMini2,
+                              @"iPad4,6"   : Device_iPadMini2,
+                              @"iPad4,7"   : Device_iPadMini3,
+                              @"iPad4,8"   : Device_iPadMini3,
+                              @"iPad4,9"   : Device_iPadMini3,
+                              @"iPhone7,1" : Device_iPhone6plus,
+                              @"iPhone7,2" : Device_iPhone6,
+                              @"iPhone8,1" : Device_iPhone6S,
+                              @"iPhone8,2" : Device_iPhone6Splus,
+                              @"iPhone8,4" : Device_iPhoneSE,
+                              @"iPhone9,1" : Device_iPhone7,
+                              @"iPhone9,2" : Device_iPhone7plus,
+                              @"iPhone9,3" : Device_iPhone7,
+                              @"iPhone9,4" : Device_iPhone7plus,
+                              @"iPhone10,1" : Device_iPhone8,
+                              @"iPhone10,2" : Device_iPhone8plus,
+                              @"iPhone10,4" : Device_iPhone8,
+                              @"iPhone10,5" : Device_iPhone8plus,
+                              @"iPhone10,3" : Device_iPhoneX,
+                              @"iPhone10,6" : Device_iPhoneX,
+                              @"iPhone11,2" : Device_iPhoneXS,
+                              @"iPhone11,4" : Device_iPhoneXSMax,
+                              @"iPhone11,6" : Device_iPhoneXSMax,
+                              @"iPhone11,8" : Device_iPhoneXR,
 
-                                                   };
+                            };
     }
     
-    NSString* deviceName = [deviceNamesByCode objectForKey:code];
+    NSString* deviceName = [deviceNamesByCode valueForKey:code];
     if(deviceName){
         return deviceName;
     }
     
-    return Device_Unrecognized;
+    return code;
 }
 @end

@@ -32,11 +32,18 @@ extern NSString *const Device_iPhone6;
 extern NSString *const Device_iPhone6plus;
 extern NSString *const Device_iPhone6S;
 extern NSString *const Device_iPhone6Splus;
+extern NSString *const Device_iPhoneSE;
 extern NSString *const Device_iPhone7;
 extern NSString *const Device_iPhone7plus;
 extern NSString *const Device_iPhone7S;
 extern NSString *const Device_iPhone7Splus;
-extern NSString *const Device_Unrecognized;
+extern NSString *const Device_iPhone8;
+extern NSString *const Device_iPhone8plus;
+extern NSString *const Device_iPhoneX;
+extern NSString *const Device_iPhoneXS;
+extern NSString *const Device_iPhoneXSMax;
+extern NSString *const Device_iPhoneXR;
+
 
 
 @interface UIDevice (ZJDeviceModel)
