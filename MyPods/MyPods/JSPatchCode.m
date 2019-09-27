@@ -26,7 +26,8 @@
     
     [JPLoader run];
     // 1用来测试单个js文件，0测试压缩包
-    if (1) {
+    BOOL isTest = YES;
+    if (isTest) {
         //加载单个js文件
         [JSPatchCode patchVersionCheck:@"https://raw.githubusercontent.com/hotJSPatch/jsv/master/patchVersion"];
         
