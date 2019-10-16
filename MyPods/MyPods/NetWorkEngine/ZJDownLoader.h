@@ -20,6 +20,7 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
+//推荐：使用通知接收加载进度，新建界面可同步刷新UI，使用回调则不能实现该效果。
 FOUNDATION_EXPORT NSString * const ZJDownloadProgressNotification;
 
 typedef void (^DownLoadSuccessBlock)(NSURL *fileUrlPath ,NSURLResponse *response );
