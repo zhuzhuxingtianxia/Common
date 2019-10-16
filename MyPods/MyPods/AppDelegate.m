@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "JSPatchCode.h"
 #import "JPEngine.h"
+#import "ZJDownLoader.h"
 
 #ifdef DEBUG  // 调试状态
 // 打开LOG功能
@@ -50,6 +51,8 @@
     //[self jsPatchLoading];
    // [JSPatchCode syncUpdate];
     //UIKeyboardDidHideNotification
+    
+    [ZJDownLoader shared];
     return YES;
 }
 

@@ -25,7 +25,8 @@
                    @"JSPacthController",
                    @"LockViewController",
                    @"SocketController",
-                   @"BageButtonController"];
+                   @"BageButtonController",
+                   @"DownLoaderController"];
 }
 
 #pragma mark -- UITableViewDelegate
@@ -42,7 +43,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%ld",indexPath.row);
+    NSLog(@"%ld",(long)indexPath.row);
     NSString *classStr = self.array[indexPath.row];
     
     UIViewController *vc = [[NSClassFromString(classStr) alloc] init];
