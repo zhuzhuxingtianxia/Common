@@ -55,6 +55,7 @@
 		B6DCCE1B1F8B6BA300483B5F /* NetWorkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCCE1A1F8B6BA300483B5F /* NetWorkEngine.m */; };
 		B6FA01F323544951000547BB /* ZJDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA01F223544951000547BB /* ZJDownLoader.m */; };
 		B6FA01F623555EAD000547BB /* DownLoaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FA01F523555EAD000547BB /* DownLoaderController.m */; };
+		B6FA0437273A0C33002B8300 /* socket.md in Resources */ = {isa = PBXBuildFile; fileRef = B6FA0436273A0C33002B8300 /* socket.md */; };
 		B6FDCE451E794EC7000F5408 /* severSoket.js in Resources */ = {isa = PBXBuildFile; fileRef = B6FDCE441E794EC7000F5408 /* severSoket.js */; };
 		B6FDCE481E7A78D2000F5408 /* WebSocketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */; };
 		B6FDCE4B1E7A8C14000F5408 /* CoSocketManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDCE4A1E7A8C14000F5408 /* CoSocketManger.m */; };
@@ -177,6 +178,7 @@
 		B6FA01F223544951000547BB /* ZJDownLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJDownLoader.m; sourceTree = "<group>"; };
 		B6FA01F423555EAD000547BB /* DownLoaderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoaderController.h; sourceTree = "<group>"; };
 		B6FA01F523555EAD000547BB /* DownLoaderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoaderController.m; sourceTree = "<group>"; };
+		B6FA0436273A0C33002B8300 /* socket.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = socket.md; sourceTree = "<group>"; };
 		B6FDCE441E794EC7000F5408 /* severSoket.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = severSoket.js; sourceTree = "<group>"; };
 		B6FDCE461E7A78D2000F5408 /* WebSocketManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketManger.h; sourceTree = "<group>"; };
 		B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketManger.m; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 				B6FDCE4A1E7A8C14000F5408 /* CoSocketManger.m */,
 				B6FDCE461E7A78D2000F5408 /* WebSocketManger.h */,
 				B6FDCE471E7A78D2000F5408 /* WebSocketManger.m */,
+				B6FA0436273A0C33002B8300 /* socket.md */,
 			);
 			path = SocketManger;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				B6C0FC621BA95B3500A32A2A /* LaunchScreen.xib in Resources */,
 				B6FDCE451E794EC7000F5408 /* severSoket.js in Resources */,
 				B6650A961E1B6A4E00701E36 /* demo.js in Resources */,
+				B6FA0437273A0C33002B8300 /* socket.md in Resources */,
 				B6FDCE4D1E7A9DBC000F5408 /* webServer.js in Resources */,
 				B62414241E2B0B380039E922 /* main.js in Resources */,
 				B6C0FC5F1BA95B3500A32A2A /* Images.xcassets in Resources */,
