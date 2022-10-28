@@ -11,6 +11,7 @@
 		9643FEC61F24E40995240613 /* libPods-RealmStauts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC284EF2D2CB40E4259153D /* libPods-RealmStauts.a */; };
 		B60603BE1C5876B100221774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60603BD1C5876B100221774 /* ViewController.m */; };
 		B60603C11C5876CC00221774 /* UIView+Masonry_LJC.m in Sources */ = {isa = PBXBuildFile; fileRef = B60603C01C5876CC00221774 /* UIView+Masonry_LJC.m */; };
+		B6090D63290B9867001BBE80 /* MCWiFiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6090D62290B9867001BBE80 /* MCWiFiManager.m */; };
 		B62378581EFD1068004DE0DB /* SQL.m in Sources */ = {isa = PBXBuildFile; fileRef = B62378571EFD1068004DE0DB /* SQL.m */; };
 		B623785B1EFD1369004DE0DB /* UserListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623785A1EFD1369004DE0DB /* UserListController.m */; };
 		B623785E1EFD13A7004DE0DB /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B623785D1EFD13A7004DE0DB /* RegisterController.m */; };
@@ -94,6 +95,8 @@
 		B60603BD1C5876B100221774 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B60603BF1C5876CC00221774 /* UIView+Masonry_LJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry_LJC.h"; sourceTree = "<group>"; };
 		B60603C01C5876CC00221774 /* UIView+Masonry_LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry_LJC.m"; sourceTree = "<group>"; };
+		B6090D61290B9866001BBE80 /* MCWiFiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCWiFiManager.h; sourceTree = "<group>"; };
+		B6090D62290B9867001BBE80 /* MCWiFiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCWiFiManager.m; sourceTree = "<group>"; };
 		B62378561EFD1068004DE0DB /* SQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQL.h; sourceTree = "<group>"; };
 		B62378571EFD1068004DE0DB /* SQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQL.m; sourceTree = "<group>"; };
 		B62378591EFD1369004DE0DB /* UserListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListController.h; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 		B6DCCE181F8B6BA300483B5F /* NetWorkEngine */ = {
 			isa = PBXGroup;
 			children = (
+				B6090D61290B9866001BBE80 /* MCWiFiManager.h */,
+				B6090D62290B9867001BBE80 /* MCWiFiManager.m */,
 				B6DCCE191F8B6BA300483B5F /* NetWorkEngine.h */,
 				B6DCCE1A1F8B6BA300483B5F /* NetWorkEngine.m */,
 				B6FA01F123544951000547BB /* ZJDownLoader.h */,
@@ -877,6 +882,7 @@
 				B623785B1EFD1369004DE0DB /* UserListController.m in Sources */,
 				B6500B9B1D6B053700BF36B6 /* UpImageDownTextBageButton.m in Sources */,
 				B6BE296F1F1C84E7007EF6B2 /* Router.swift in Sources */,
+				B6090D63290B9867001BBE80 /* MCWiFiManager.m in Sources */,
 				B6FDCE481E7A78D2000F5408 /* WebSocketManger.m in Sources */,
 				B6257F0E1F55759E00D834BC /* AutolayoutController.m in Sources */,
 				B62378611EFD1431004DE0DB /* UserModel.m in Sources */,
